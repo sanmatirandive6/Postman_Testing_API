@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "e470201c-6cc8-4cfa-875c-f0dd135bcf69",
+		"name": "CovidTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35073739"
+	},
+	"item": [
+		{
+			"name": "covid19apitest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newurl}}/api/regions",
+					"host": [
+						"{{newurl}}"
+					],
+					"path": [
+						"api",
+						"regions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegionName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newurl}}/api/reports?date=2020-03-14&q=China%20Beijing&iso=CHN&region_name=China&region_province=Beijing",
+					"host": [
+						"{{newurl}}"
+					],
+					"path": [
+						"api",
+						"reports"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-03-14"
+						},
+						{
+							"key": "q",
+							"value": "China%20Beijing"
+						},
+						{
+							"key": "iso",
+							"value": "CHN"
+						},
+						{
+							"key": "region_name",
+							"value": "China"
+						},
+						{
+							"key": "region_province",
+							"value": "Beijing"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
